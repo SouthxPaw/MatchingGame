@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.matching.MainActivity" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        layout="@layout/images"
+        android:layout_below="@id/tv_p2"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="20dp"
+        android:text="P1: "
+        android:textColor="#000000"
+        android:textSize="32dp" />
+
+
+    <TextView
+        android:id="@+id/tv_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_p1"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="P2: "
+        android:textColor="#000000"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/P1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_p1"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/P2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_p2"
+        android:layout_marginTop="98dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+</RelativeLayout>
